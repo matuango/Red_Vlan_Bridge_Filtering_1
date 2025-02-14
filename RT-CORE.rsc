@@ -27,6 +27,10 @@ add address=192.168.20.0/24 dns-server=8.8.8.8 gateway=192.168.20.254
 add address=192.168.30.0/24 dns-server=8.8.8.8 gateway=192.168.30.254 
 /ip firewall nat 
 add action=masquerade chain=srcnat out-interface=ether1
+/ip route
+add dst-address=0.0.0.0/0 gateway=10.0.0.1
+/ip dhcp-client
+set disabled=yes
 /tool romon
 set enabled=yes
 /system identity
