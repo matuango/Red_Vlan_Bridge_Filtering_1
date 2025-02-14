@@ -1,0 +1,1 @@
+Archivitos de configuracion para pequeña simulacion de red con equipos Mikrotik en GNS3
